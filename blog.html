@@ -48,6 +48,31 @@
     </div>
     </div>
   </section>
+  <section>
+    <div class="container blue-border">
+      <h3 id="left-align">Transaction</h3>
+      <div class="space-left">
+      <p>
+        I recently learned how to use a transaction block, and I am so glad I did.
+        Given that I needed to make several queries dependent on each other, it
+        turned out to be the best tool for my needs. Simply put, transactions are
+        blocks where SQL statements are only permanent if they are all successful.
+        If one fails, they all fail, which worked for me because I didn't need a
+        half-formed object floating around in my database.
+      </p>
+      <p>
+        Because transactions only succeed if every statement succeeds, I found it
+        best to use the bang on my create actions (the only actions in my transaction,
+        in this case). If the transaction failed, I could rely on the bang to raise
+        an exception, and I could also specify what to return should it raise that
+        error. For my purposes, I only needed to return true if it was successful
+        and false if it wasn't. The transaction block helped me build an efficient
+        method that performed the queries I needed while also providing a reliable
+        boolean value.
+      </p>
+      </div>
+    </div>
+  </section>
   <footer>
   </footer>
 </body>
