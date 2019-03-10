@@ -51,7 +51,7 @@ table {
 
 body {
   font: 300 18px/22px "Courier", "Helvetica Neue", Helvetica, sans-serif;
-	background-color: #4CB5F5
+	background-color: #EDAEC0
 }
 
 /* Grid */
@@ -79,6 +79,7 @@ h2 {
   font-size: 18px;
 	margin-bottom: 50px;
 	text-align: left;
+	text-decoration: underline;
 }
 
 h3 {
@@ -110,8 +111,18 @@ h3 {
 		float: left;
 		padding-left: 30px;
 		border-radius: 50%;
-		border-color: #f54cb5;
+		border-color: #FFAEBC;
 		border-style: double;
+}
+
+.doodle {
+	height: 200px;
+	float: center;
+}
+
+#boat {
+	height: 200px;
+	float: right;
 }
 
 .container p {
@@ -119,24 +130,21 @@ h3 {
 	text-align: left;
 }
 
-div p {
+.text-decoration {
 	text-align: left;
+	background-color: #EBEEE0;
 }
 
-section h3 {
-	text-align: center;
-}
-
-.blue-border {
-	border-left: 2px solid #0C7DED;
-}
-
-.space-left {
+.left-padding {
 	padding-left: 10px;
 }
 
-#top-padding {
+.top-padding {
 	padding-top: 50px;
+}
+
+.bottom-padding {
+	padding-bottom: 50px;
 }
 /* Nav */
 
@@ -153,7 +161,7 @@ section h3 {
 }
 
 .navbar {
-	background-color: #4CB5F5;
+	background-color: #EDAEC0;
 }
 
 .navbar a {
